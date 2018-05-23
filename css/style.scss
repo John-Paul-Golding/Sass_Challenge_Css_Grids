@@ -1,0 +1,117 @@
+  /*Declare all mixins at the top*/
+  @mixin wrapper{
+                 border: 2px solid;
+                 padding: 50px;
+                 color: black;
+  }
+
+  @mixin container{
+                   display: grid;
+                   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                   grid-template-rows: 1fr;
+                   grid-gap: 50px;
+                   border: 2px solid;
+                   padding: 40px;
+  }
+
+  @mixin link{
+              border: 2px solid;
+              text-align: center;
+              background-color: red;
+  }
+
+  @mixin section_2{
+                   display: grid;
+                   grid-template-columns: 1fr 1fr;
+                   grid-template-rows: 1fr;
+                   grid-gap: 60px;
+                   padding: 50px;
+  }
+
+  @mixin paragraph_1{
+                     border: 2px solid;
+                     padding: 50px;
+                     text-align: center;
+  }
+
+  @mixin image_1{
+                 border: 2px solid;
+                 padding: 50px;
+                 text-align: center;
+  }
+
+  @mixin section_3{
+                   display: grid;
+                   grid-template-columns: 1fr 1fr 1fr;
+                   grid-template-rows: 1fr;
+                   grid-gap: 50px;
+                   padding: 50px;
+  }
+
+  @mixin image_2{
+                 border: 2px solid;
+                 text-align: center;
+  }
+
+  @mixin section_4{
+                   display: inline-flex;
+                   grid-template-columns: 1fr;
+                   grid-template-rows: 1fr;
+                   grid-gap: 50px;
+                   padding-right: 50px;
+                   border: 2px solid;
+  }
+
+  @mixin facilitator_paragraph{
+                               margin:  10px 10px;
+  }
+
+/*Including the mixins in the styles*/
+.wrapper{
+  @include wrapper
+}
+
+.container{
+  @include container
+}
+
+.link{
+  @include link
+}
+
+.section2{
+  @include section_2
+}
+
+.para1{
+  @include paragraph_1
+}
+
+.image1{
+  @include image_1
+}
+
+.section3{
+  @include section_3
+}
+
+.image2{
+  @include image_2
+}
+
+.section4{
+  @include section_4
+}
+
+.facilitator_paragraph{
+  @include facilitator_paragraph
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  background-color: purple;
+}
